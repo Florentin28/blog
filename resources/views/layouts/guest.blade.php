@@ -18,15 +18,14 @@
         <div class="container mx-auto flex flex-col space-y-10">
             <nav class="flex justify-between items-center py-2">
                 <div>
-                    <a href="/"
-                        class="group font-bold text-3xl flex items-center space-x-4 hover:text-emerald-600 transition ">
+                    <a href="/" class="group font-bold text-3xl flex items-center space-x-4 hover:text-emerald-600 transition">
                         <x-application-logo
                             class="w-10 h-10 fill-current text-gray-500 group-hover:text-emerald-500 transition" />
                         <span>Mon blog</span>
                     </a>
                 </div>
                 <div class="flex items-center space-x-4 justify-end">
-                    <a class="font-bold hover:text-emerald-600 transition" href="/">Articles</a>
+                    <a href="{{ route('articles.index') }}" class="font-bold hover:text-emerald-600 transition">Articles</a>
                 </div>
             </nav>
 
